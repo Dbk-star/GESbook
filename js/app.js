@@ -49,3 +49,10 @@ zoneAlertes.appendChild(div);
 // Lancer au chargement de la page
 updateDashboard();
 
+
+/*installation du service worker pour le mode hors ligne(comme pour une apk mobile)*/
+if ("serviceWorker" in navigator) {
+navigator.serviceWorker.register("/service-worker.js")
+.then(() => console.log("Service Worker enregistré"))
+.catch(err => console.log("Erreur SW :", err));
+}
