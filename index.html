@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GESbook</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🐶 GESbook</h1>
+    </header>
+
+    <main>
+        <div id="alertes-stock"></div>
+
+        <section class="stats">
+
+            <div class="card">
+                <h2>Total Produits</h2>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card warning">
+                <h2>Stock Faible</h2>
+                <p id="low">0</p>
+            </div>
+
+            <div class="card danger">
+                <h2>Rupture</h2>
+                <p id="out">0</p>
+            </div>
+
+        </section>
+
+        <section class="actions">
+
+            <button onclick="location.href='ajouter-produit.html'">
+            ➕ Ajouter Produit
+            </button>
+
+            <button onclick="location.href='vente.html'">
+            🛒 Enregistrer Vente
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            <p>Dashboard</p>
+        </a>
+
+        <a href="produits.html" class="nav-item">
+            <span>📦</span>
+            <p>Produits</p>
+        </a>
+
+        <a href="vente.html" class="nav-item">
+            <span>🛒</span>
+            <p>Vente</p>
+        </a>
+
+        <a href="historique.html" class="nav-item">
+            <span>📊</span>
+            <p>Historique</p>
+        </a>
+
+    </nav>
+
+</body>
+</html>     

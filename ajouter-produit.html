@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ajouter produit - GESbook</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>➕ Ajouter un produit</h1>
+    </header>
+
+    <main>
+
+        <form id="form-produit">
+
+        <input
+            type="text"
+            id="nom"
+            placeholder="Nom du produit"
+            required
+            class="input"
+        />
+
+        <select id="categorie" class="input">
+
+            <option value="Croquettes">Croquettes</option>
+            <option value="Friandises">Friandises</option>
+            <option value="Accessoires">Accessoires</option>
+            <option value="Jouets">Jouets</option>
+            <option value="Hygiène">Hygiène</option>
+            <option value="Médicaments">Médicaments</option>
+
+        </select>
+
+        <input
+            type="number"
+            id="prix"
+            placeholder="Prix"
+            required
+            class="input"
+        />
+
+        <input
+            type="number"
+            id="stock"
+            placeholder="Stock initial"
+            required
+            class="input"
+        />
+
+        <button type="submit">
+            Ajouter le produit
+        </button>
+
+        </form>
+
+    </main>
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>🏠</span>
+            <p>Dashboard</p>
+        </a>
+
+        <a href="produits.html" class="nav-item">
+            <span>📦</span>
+            <p>Produits</p>
+        </a>
+
+        <a href="vente.html" class="nav-item">
+            <span>🛒</span>
+            <p>Vente</p>
+        </a>
+
+        <a href="historique.html" class="nav-item">
+            <span>📊</span>
+            <p>Historique</p>
+        </a>
+
+    </nav>
+
+    <script src="js/ajouter-produit.js"></script>
+
+</body>
+</html>
